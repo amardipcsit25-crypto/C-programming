@@ -159,7 +159,7 @@ Null Pointer → int *p = NULL;
 Void Pointer → void *p;
 Pointer to Pointer → int **pp;
 
-##Pointer Arithmetic.
+### Pointer Arithmetic.
 What is Pointer Arithmetic?
 
 Pointer arithmetic means performing operations on pointers to move through memory locations.
@@ -240,13 +240,13 @@ Working with strings
 Dynamic memory handling
 Implementing data structures
 
-##Conclusion
+### Conclusion
 
 #Pointer arithmetic allows efficient navigation through memory using type-based steps, making it powerful for arrays and advanced programming.
 
-##ABOUT STRUCTURE
+# ABOUT STRUCTURE
 
-What is a Structure?
+## What is a Structure?
 
 A structure in C is a user-defined data type that allows you to store different types of data in one unit.
 
@@ -260,7 +260,7 @@ struct structure_name {
     ...
 };
  
- ##Declaration & Initialization
+ ### Declaration & Initialization
 
 struct employee {
     int id;
@@ -311,7 +311,7 @@ void display(struct employee e) {
     printf("%d", e.id);
 }
 
-##Why Use Structure?
+### Why Use Structure?
 
 Organizes related data together
 Makes programs easy to manage
@@ -328,7 +328,7 @@ struct employee{
     long int salary;
 };
 
-##Important Notes 
+### Important Notes 
 
 Use . for normal variable
 Use -> for pointer
