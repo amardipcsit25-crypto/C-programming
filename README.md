@@ -141,32 +141,32 @@ Conclusion
 
 Functions are an essential part of C programming. They make programs modular, organized, and easier to maintain. Using functions properly helps in writing efficient and structured code.
 
- POINTER IN C
+# POINTER IN C
  Introduction
 
 A pointer is a variable that stores the address of another variable.
 
- Declaration & Initialization
+## Declaration & Initialization
 int *ptr;
 int a = 10;
 ptr = &a;
 
- Dereferencing
+ ##Dereferencing
 printf("%d", *ptr);  // value of a
 
-Types of Pointers
+##Types of Pointers
 Null Pointer → int *p = NULL;
 Void Pointer → void *p;
 Pointer to Pointer → int **pp;
 
-Pointer Arithmetic.
+##Pointer Arithmetic.
 What is Pointer Arithmetic?
 
 Pointer arithmetic means performing operations on pointers to move through memory locations.
 
- Important: Pointer movement depends on the data type size, not just 1 byte.
+ ###Important: Pointer movement depends on the data type size, not just 1 byte.
 
-Basic Operations
+##Basic Operations
 1. Increment (ptr++)
 
 Moves pointer to the next memory location of its type.
@@ -240,11 +240,11 @@ Working with strings
 Dynamic memory handling
 Implementing data structures
 
-Conclusion
+##Conclusion
 
-Pointer arithmetic allows efficient navigation through memory using type-based steps, making it powerful for arrays and advanced programming.
+#Pointer arithmetic allows efficient navigation through memory using type-based steps, making it powerful for arrays and advanced programming.
 
-ABOUT STRUCTURE
+##ABOUT STRUCTURE
 
 What is a Structure?
 
@@ -260,7 +260,7 @@ struct structure_name {
     ...
 };
  
- Declaration & Initialization
+ ##Declaration & Initialization
 
 struct employee {
     int id;
@@ -292,7 +292,7 @@ ptr = &e1;
 
 printf("%d", ptr->id);
 
-Nested Structure
+##Nested Structure
 
 Structure inside another structure.
 
@@ -305,13 +305,13 @@ struct employee {
     struct date dob;
 };
 
-Passing Structure to Function
+##Passing Structure to Function
 
 void display(struct employee e) {
     printf("%d", e.id);
 }
 
-Why Use Structure?
+##Why Use Structure?
 
 Organizes related data together
 Makes programs easy to manage
@@ -328,7 +328,7 @@ struct employee{
     long int salary;
 };
 
-Important Notes 
+##Important Notes 
 
 Use . for normal variable
 Use -> for pointer
