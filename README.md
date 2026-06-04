@@ -41,11 +41,11 @@ Its types are one dimensional arrary(for sorting the arrary in ascending and des
 ## About string function 
 String is the function which comes under the header file <string.h>.Its data types is %s.String is written under double quote(" ").
 
- 1.strlen():used to the calculated the length of string.   
+ 1.strlen():used to the calculate the length of string.   
  
  2.strcpy():used to copy the string.
 
- 3.strcmp():used to compare between the two string.
+ 3.strcmp():used to compare between the two strings.
  
  4.strrev(); used to reverse the string.
               
@@ -53,7 +53,7 @@ String is the function which comes under the header file <string.h>.Its data typ
  
  6.strupr():used to convert to uppercase.
  
- 7.strcat():used to join the two string.
+ 7.strcat():used to join the two strings.
  
  ### In the function 
 
@@ -61,7 +61,7 @@ Functions in C Programming
  Introduction
 In C programming, a function is a block of code that performs a specific task. Functions help in breaking a large program into smaller, manageable, and reusable parts.
 
- Objective
+ ### Objective
  
 .To understand the concept of functions in C
 
@@ -69,10 +69,10 @@ In C programming, a function is a block of code that performs a specific task. F
 
 .To improve code reusability and readability
 
- Types of Functions
+###  Types of Functions
 Functions in C are mainly of two types:
 
-1. Library Functions
+#### 1. Library Functions
 
 These are predefined functions provided by C.
 Examples:
@@ -83,19 +83,19 @@ scanf()
 
 strlen()
 
-2. User-defined Functions
+#### 2. User-defined Functions
 These are created by the programmer.
 
  Function Structure
   A function has three main parts:
 
-1. Declaration (Prototype)
+#### 1. Declaration (Prototype)
     return_type function_name(parameters);
-2. Definition
+#### 2. Definition
     return_type function_name(parameters) {
     // code
      }
-3. Function Call
+#### 3. Function Call
    function_name(arguments);
 
    Types of User-defined Functions
@@ -107,7 +107,7 @@ These are created by the programmer.
 
    Arguments, with return value
 
-Example Program
+#### Example Program
    #include <stdio.h>
 
 // Function declaration
@@ -128,7 +128,7 @@ int add(int a, int b) {
     return a + b;
 }
 
- Advantages of Functions
+ #### Advantages of Functions
   Code reusability
 
   Easy debugging
@@ -137,12 +137,12 @@ int add(int a, int b) {
 
   Reduces code duplication
 
-Conclusion
+## Conclusion
 
 Functions are an essential part of C programming. They make programs modular, organized, and easier to maintain. Using functions properly helps in writing efficient and structured code.
 
 # POINTER IN C
- Introduction
+ ## Introduction
 
 A pointer is a variable that stores the address of another variable.
 
@@ -151,7 +151,7 @@ int *ptr;
 int a = 10;
 ptr = &a;
 
- ##Dereferencing
+ Dereferencing
 printf("%d", *ptr);  // value of a
 
 ## Types of Pointers
@@ -160,14 +160,14 @@ Void Pointer → void *p;
 Pointer to Pointer → int **pp;
 
 ### Pointer Arithmetic.
-What is Pointer Arithmetic?
+#### What is Pointer Arithmetic?
 
 Pointer arithmetic means performing operations on pointers to move through memory locations.
 
  ###Important: Pointer movement depends on the data type size, not just 1 byte.
 
 ##Basic Operations
-1. Increment (ptr++)
+#### 1. Increment (ptr++)
 
 Moves pointer to the next memory location of its type.
 
@@ -178,12 +178,12 @@ ptr++;  // moves by sizeof(int)
 
 If int = 4 bytes, pointer moves 4 bytes forward
 
-2. Decrement (ptr--)
+#### 2. Decrement (ptr--)
 
 Moves pointer to the previous location
 
 ptr--;
-3. Addition (ptr + n)
+#### 3. Addition (ptr + n)
 
 Moves pointer forward by n elements
 
@@ -191,7 +191,7 @@ ptr = ptr + 2;
 
  Moves 2 × sizeof(data_type) bytes
 
-4. Subtraction (ptr - n)
+#### 4. Subtraction (ptr - n)
 
 Moves pointer backward
 
@@ -234,7 +234,7 @@ But:
 char *ptr;
 ptr + 1 → moves 1 byte only
 
-Why Pointer Arithmetic is Useful
+#### Why Pointer Arithmetic is Useful
 Traversing arrays
 Working with strings
 Dynamic memory handling
@@ -276,7 +276,7 @@ Use the dot operator (.)
 
 printf("%d", e1.id);
 
-Array of Structures
+## Array of Structures
 
 Used when handling multiple records.
 
@@ -292,7 +292,7 @@ ptr = &e1;
 
 printf("%d", ptr->id);
 
-##Nested Structure
+## Nested Structure
 
 Structure inside another structure.
 
@@ -305,7 +305,7 @@ struct employee {
     struct date dob;
 };
 
-##Passing Structure to Function
+### Passing Structure to Function
 
 void display(struct employee e) {
     printf("%d", e.id);
@@ -333,5 +333,5 @@ struct employee{
 Use . for normal variable
 Use -> for pointer
 
-scanf("%s", emp.emp_name);   // correct
+scanf("%s", emp.emp_name); <br>  // correct
 Structures help a lot in file handling (fscanf, fprintf)
