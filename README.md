@@ -154,7 +154,7 @@ ptr = &a;
  ##Dereferencing
 printf("%d", *ptr);  // value of a
 
-##Types of Pointers
+## Types of Pointers
 Null Pointer → int *p = NULL;
 Void Pointer → void *p;
 Pointer to Pointer → int **pp;
